@@ -14,27 +14,9 @@
     "jsx": "preserve",
     "incremental": true,
     "downlevelIteration": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "plugins": [{"name": "next"}],
+    "paths": {"@/*": ["./*"]}
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
-```
-
-5. **Commit changes**
-6. Vercel will auto-rebuild!
-
----
-
-## ✅ **THIS WILL FIX IT!**
-
-The key change is adding:
-```
-"downlevelIteration": true,
